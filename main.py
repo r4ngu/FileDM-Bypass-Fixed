@@ -1,5 +1,4 @@
 import sys
-import re
 import time
 from colorama import Fore, Back, init
 import pyperclip as pc
@@ -10,10 +9,10 @@ def bypass(download_id):
     channel = bypass_request.text.split("**")[0]
     requests.post(f"http://dlsft.com/callback/?channel={channel}&id={download_id}&action=started")
     requests.post(f"http://dlsft.com/callback/?channel={channel}&id={download_id}&action=completed")
+    
 
 def main(executable):
-    download_id = re.sub("[^0-9]", "", executable) 
-    bypass(download_id)
+    download_id = executable.split("_")[1].replace(".exe", "")
     print(Fore.GREEN + "Your download link is: " + Fore.RESET + f"http://directdl.xyz/dm.php?id={download_id}")
     print("Copied to clipboard")
     pc.copy(f"http://directdl.xyz/dm.php?id={download_id}")

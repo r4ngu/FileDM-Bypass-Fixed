@@ -10,7 +10,7 @@ This Python script will let you bypass the FileDM installer (which has tons of a
 
 ---
 ## How it works
-The FileDM installer has a bunch of numbers in its name (e.g. file_`123456`), the script extracts it, then sends a GET request to the DirectFileDL callback info URL with the download ID as a parameter, sends two POST requests to the DirectFileDL callback URL with the channel ID, download ID, and action as parameters, finally, it constructs the DirectFileDL link using the download ID.
+The FileDM installer has a bunch of numbers in its name (e.g. file_`#000000 123456`), the script extracts it, then sends a GET request to the DirectFileDL callback info URL with the download ID as a parameter, sends two POST requests to the DirectFileDL callback URL with the channel ID, download ID, and action as parameters, finally, it constructs the DirectFileDL link using the download ID.
 
 If this method gets patched I will look for more ways!
 

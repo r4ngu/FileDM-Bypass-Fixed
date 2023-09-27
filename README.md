@@ -4,7 +4,9 @@ This Python script will let you bypass the FileDM installer (which has tons of a
 ---
 ## Usage
 
-Download the executable file from DirectFileDL (e.g. file_123456.exe).\nRun the script with the executable file as an argument (e.g. python bypass.py file_123456.exe) or drag the executable to the .py script.\nThe script will print the direct download link and copy it to your clipboard.
++ Download the executable file from DirectFileDL (e.g. file_123456.exe).
++ Run the script with the executable file as an argument (e.g. python bypass.py file_123456.exe) or drag the executable to the .py script.
++ The script will print the direct download link and copy it to your clipboard.
 
 ---
 ## How it works

@@ -13,15 +13,16 @@ def bypass(download_id):
 
 def main(executable):
     download_id = executable.split("_")[1].replace(".exe", "")
-    print(Fore.GREEN + "Your download link is: " + Fore.RESET + f"http://directdl.xyz/dm.php?id={download_id}")
-    print("Copied to clipboard")
-    pc.copy(f"http://directdl.xyz/dm.php?id={download_id}")
+    print(Fore.GREEN + "Your download link is: " + Fore.RESET + f"https://a.directfiledl.com/getfile?id={download_id}")
+    print("Copied your bypassed link to clipboard...")
+    pc.copy(f"https://a.directfiledl.com/getfile?id={download_id}")
     print("\nClosing in 5 seconds...")
     time.sleep(5)
+    sys.exit()
 
 # Start
 if __name__ == '__main__':
-    init() # Colorama.init() - Overwhise colors don't work
+    init() # Colorama.init() - Otherwise colors don't work
     if len(sys.argv) > 1:
         exe = sys.argv[1]
         main(exe)
